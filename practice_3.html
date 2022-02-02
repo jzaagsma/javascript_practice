@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice 3</title>
+</head>
+<body>
+    <script>
+        function add7(number1){
+            let addSeven = (number1+7);
+            console.log(addSeven);
+        }
+
+        function multiply (number1, number2){
+            let multiplyNumbers = (number1 * number2);
+            console.log(multiplyNumbers);
+        }
+
+        function capitalize (string){
+            let lowerCase = string.toLowerCase();
+            let firstLetter = lowerCase.substring(0,1);
+            let capFirst = firstLetter.toUpperCase();
+            let leftOver = lowerCase.substring(1);
+            let newString = capFirst.concat(leftOver);
+            console.log(newString);
+        }
+
+        function lastLetter (secondString){
+            let stringLength = secondString.length;
+            let finalCharacter = secondString.substring(stringLength - 1);
+            console.log(finalCharacter);
+        }
+
+        add7(7);
+        multiply(7,7);
+        capitalize("HELLO WORLD!");
+        lastLetter("Look at this super long string that I came up with all by myself")
+    </script>
+</body>
+</html>
